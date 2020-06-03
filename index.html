@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@qa/dist/style/style-components.css"/>
+
+    <style type="text/css">
+      @font-face {
+        font-family: 'Noto Sans Syriac Western';
+        font-style: normal;
+        font-weight: 400;
+        src: url(//fonts.gstatic.com/ea/notosanssyriacwestern/v1/NotoSansSyriacWestern-Regular.eot);
+        src: url(//fonts.gstatic.com/ea/notosanssyriacwestern/v1/NotoSansSyriacWestern-Regular.eot?#iefix) format('embedded-opentype'),
+         url(//fonts.gstatic.com/ea/notosanssyriacwestern/v1/NotoSansSyriacWestern-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosanssyriacwestern/v1/NotoSansSyriacWestern-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosanssyriacwestern/v1/NotoSansSyriacWestern-Regular.ttf) format('truetype');
+      }
+
+      [lang='syr'] {
+        font-family: 'Noto Sans Syriac Western', Verdana, serif;
+        font-variant-ligatures: normal;
+      }
+
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function(event) {
+        import ('https://cdn.jsdelivr.net/npm/alpheios-embedded@beta/dist/alpheios-embedded.js').then(embedLib => {
+          window.AlpheiosEmbed.importDependencies({ mode: 'custom', libs: {
+            components: 'https://cdn.jsdelivr.net/npm/alpheios-components@beta/dist/alpheios-components.js' }}).then(Embedded => {
+              new Embedded({clientId: 'embed-lib-demo-treebanks', authEnv: null}).activate();
+          }).catch(e => {
+            console.error(`Import of an embedded library dependencies failed: ${e}`)
+          })
+        }).catch(e => {
+          console.error(`Import of an embedded library failed: ${e}`)
+        })
+      });
+    </script>
+    <p>Text of The Odes and Psalms of Solomon, Ode 3, from <a href="http://sedra.bethmardutho.org/library">Beth Mardutho, The Syriac Institute, </a></p>
+    <div lang="syr" direction="rtl" class="alpheios-enabled">
+      <p>1 [   …   ]   [   …   ]   ܡܠܒܫ   ܐܢܐ   ܂   ܀   ܀  </p>
+      <p>2 ܘܗܕܡܘܗܝ   ܠܘܬܗ   ܐܢܘܢ   ܃   ܀   ܘܒܗܘܢ   ܬܠܐ   ܐܢܐ   ܘܡܚܒ   ܠܝ   ܂   ܀   ܀  </p>
+      <p>3 ܠܐ   ܓܝܪ   ܝܕܥ   ܗܘܝܬ   ܠܡܪܗܡ   ܠܡܪܝܐ   ܃   ܀   ܐܠܘ   ܗܘ   ܠܐ   ܪܚܡ   ܗܘܐ   ܠܝ   ܂   ܀   ܀  </p>
+      <p>4 ܡܢܘ   ܡܫܟܚ   ܠܡܦܪܫ   ܪܚܡܬܐ   ܃   ܀   ܐܠܐ   ܗܘ   ܕܡܬܪܚܡ   ܂   ܀   ܀   ܘܘܘܘ  </p>
+      <p>5 ܡܚܒ   ܐܢܐ   ܠܪܚܝܡܐ   ܘܪܚܡܐ   ܠܗ   ܢܦܫܝ   ܃   ܀   ܘܐܝܟܐ   ܕܢܝܚܗ   ܐܦ   ܐܢܐ   ܐܝܬܝ   ܂   ܀   ܀  </p>
+      <p>6 ܘܠܐ   ܐܗܘܐ   ܢܘܟܪܝܐ   ܃   ܀   ܡܛܠ   ܕܠܝܬ   ܚܣܡܐ   ܠܘܬ   ܡܪܝܐ   ܡܪܝܡܐ   ܘܡܪܚܡܢܐ   ܂   ܀   ܀  </p>
+      <p>7 ܐܬܡܙܓܬ   ܡܛܠ   ܕܐܫܟܚ   ܪܚܡܐ   ܠܗܘ   ܪܚܝܡܐ   ܃   ܀   ܡܛܠ   ܕܐܪܚܡ   ܠܗܘ   ܒܪܐ   ܐܗܘܐ   ܒܪܐ   ܂   ܀   ܀  </p>
+      <p>8 ܗܘ   ܓܝܪ   ܕܡܬܢܩܦ   ܠܗܘ   ܕܠܐ   ܡܐܬ   ܃   ܀   ܐܦ   ܗܘ   ܕܠܐ   ܡܘܬܐ   ܢܗܘܐ   ܂   ܀   ܀  </p>
+      <p>9 ܘܗܘ   ܕܒܚܝܐ   ܡܨܛܒܐ   ܃   ܀   ܚܝܐ   ܢܗܘܐ   ܂   ܀   ܀ </p>
+    </div>
+  </body>
+</html>
